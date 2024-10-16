@@ -22,7 +22,7 @@ const Contents = () => {
   const { previewContent } = usePreview();
 
   useEffect(() => {
-    const ws = new WebSocket('ws://127.0.0.1:9090/ws');
+    const ws = new WebSocket('ws://127.0.0.1:9091/ws');
     wsRef.current = ws;
 
     ws.onopen = () => {

@@ -1,0 +1,36 @@
+[package]
+name = "BoxPeer_Web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+serde = { version = "1.0", features = ["derive"] }
+libp2p-kad = {version = "0.46" }
+tokio = { version = "1", features = ["full"] }
+lazy_static = {version = "1.4"}
+futures = { version= "0.3" }
+libp2p = { version = "0.54.1", features = ["mdns", "tokio", "identify", "kad", "noise", "macros", "yamux", "quic"] }
+libp2p-bitswap = { version = "0.25.1" }
+tracing = { version = "0.1.40" }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+blockstore = {version = "0.7", features = ["sled"] }
+sled = "0.34"
+libp2p-identity = "0.2.9"
+libipld = "0.16.0"
+libp2p-core = "0.42.0"
+rand = "0.8.5"
+multihash-codetable = {version = "0.1", features = ["sha2"] }
+beetswap = "=0.4.0"
+cid = "0.11"
+serde_json = "1"
+devtools = "0.3.3"
+matches = "0.1.10"
+sha2 = "0.10.8"
+hex = "0.4.3"
+base64 = "0.22.1"
+tokio-stream = "0.1.16"
+anyhow = "1.0.86"
+rmp-serde = {version = "1"}
+actix-web-actors = {version= "4"}
+actix= {version = "0.13.5" }
